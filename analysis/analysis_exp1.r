@@ -1,12 +1,3 @@
-## + total earnings difference
-## + learning earnings difference
-## + test earnings difference
-## + % explored in the first block
-## + % of decisions fitting 1d rule at test
-## + % of decisions fitting true rule at test
-## + believed % bad
-## + % explicitly giving correct dimension
-## + % explicitly giving trap
 source("analysis_functions.r")
 
 data = read.csv('../data/data_exp1.csv')
@@ -33,7 +24,7 @@ endquestions
 
 ###### MAIN EXPERIMENT DATA ######
 
-# analyze main experiment data
+# graph main experiment data
 data$test = as.logical(data$test)
 data$correct = as.logical(data$correct)
 data$condition = as.factor(data$condition)

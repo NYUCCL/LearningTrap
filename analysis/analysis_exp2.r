@@ -1,4 +1,3 @@
-
 source("analysis_functions.r")
 
 data = read.csv('../data/data_exp2.csv')
@@ -12,7 +11,7 @@ table(questiondata$gender)
 
 questiondata = questiondata %>% filter(exclude == 0)
 
-# analyze post-experiment questions
+# summarize post-experiment questions
 endquestions = questiondata %>%
     group_by(condition) %>%
         summarize(meanpercent = mean(dangerpercent, na.rm=TRUE),
@@ -30,17 +29,9 @@ endquestions = questiondata %>%
 endquestions
 
 
-## final bonus difference
-## permuteTwoSample(question_subset %>% filter(condition=="contingent") %>% .$finalscore,
-##     question_subset %>% filter(condition=="full_info") %>% .$finalscore)
-
-## no difference in proportion of confident participants
-## fisher.test(question_subset$condition, question_subset$completeLearn == "yes")
-
-
 ###### MAIN EXPERIMENT DATA ######
 
-# analyze main experiment data
+# graph main experiment data
 data$test = as.logical(data$test)
 data$correct = as.logical(data$correct)
 data$condition = as.factor(data$condition)
