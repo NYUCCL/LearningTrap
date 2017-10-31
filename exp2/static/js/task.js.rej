@@ -1,0 +1,13 @@
+1diff a/experiment/static/js/task.js b/experiment/static/js/task.js	(rejected hunks)
+@@ -171,6 +216,11 @@ function CategoryUIController(responseFn, startingscore) {
+         $(".choice").off();
+         $("#feedbackmessage").html(expVars.feedbackmessages[outcometype]);
+         $("#feedbackval").html(expVars.feedbackstrings[outcometype]);
++        for (i = 0; i < expVars.ndim; i++) {
++            $("#dimval" + i + " .v" + dimvalues[i]).css("color", "black");
++            $("#dimval" + i + " .v" + (1 - dimvalues[i])).css("color", "white");
++            $("#dimval" + i).removeClass("obscured");
++        }
+         if (outcometype === 0){
+             $("#feedback").css("color", "red");
+         } else if (outcometype === 1) {

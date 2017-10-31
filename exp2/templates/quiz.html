@@ -1,0 +1,91 @@
+<!--WRAPPER-->
+<div id="container-instructions">
+
+    <div class="header">
+        <!--TITLE--><h1>Comprehension Check</h1><!--END TITLE-->
+        <!--DESCRIPTION--><span></span><!-- END DESCRIPTION-->
+    </div>
+    <!--END HEADER-->
+
+    <div class="instructions well">
+        <p id="toptext">
+            Before beginning the experiment, you must answer a few simple questions to ensure you have read the instructions. If you do not answer all questions correctly, you will be returned to the start of the instructions and have a chance to retake this quiz.
+            <form id="prequiz" action="debrief" method="post">
+
+                <div class="question">
+                    <p class="questiontext">
+                        Will the qualities that determine whether an applicant is suitable change over time?
+                        <select id="change" name="change" class="form-control">
+                            <option value="noresp" SELECTED></option>
+	                          <option value="yes">yes</option>
+	                          <option value="no">no</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="question">
+                    <p class="questiontext">
+                        How can you learn to tell whether an applicant is suitable?
+                        <select id="tellsuitable" name="tellsuitable" class="form-control">
+                            <option value="noresp" SELECTED></option>
+	                          <option value="color">Based on the applicant's name</option>
+	                          <option value="feature">Based on the information in the application</option>
+                            <option value="order">Based on the order in which you see the applicants</option>
+                        </select>
+                    </p>
+                </div>
+
+                <div class="question">
+                    <p class="questiontext">
+                        What happens when you reject an applicant?
+                        <select id="avoidinfo" name="avoidinfo" class="form-control">
+                            <option value="noresp" SELECTED></option>
+	                          <option value="noInfo">You do not learn if they were suitable or unsuitable, and do not alter your revenue.</option>
+	                          <option value="info">You learn if they were suitable or unsuitable, but do not alter your revenue.</option>
+	                          <option value="infoPlusBonus">You learn if they were suitable or unsuitable and alter your revenue.</option>
+                        </select>
+                    </p>
+	              </div>
+                <div class="question" >
+                    <p class="questiontext" >
+                        What key do you press to reveal each field?
+                        <select id="keypress" name="keypress" class="form-control" >
+                            <option value="noresp" SELECTED></option>
+                            <option value="enter" >enter</option>
+                            <option value="n" >'n'</option>
+                            <option value="space" >space</option>
+                        </select>
+                    </p>
+                </div>
+
+                <div class="question">
+                    <p class="questiontext">
+                        What is your goal in the task?
+                        <select id="goal" name="goal" class="form-control">
+                            <option value="noresp" SELECTED></option>
+	                          <option value="accuracy">To make the right hiring choice on every applicant</option>
+	                          <option value="revenue">To finish the game with high revenue/bonus</option>
+                            <option value="speed">To finish the game quickly</option>
+                        </select>
+                    </p>
+                </div>
+
+                <div class="question" >
+                    <p class="questiontext" >
+                        Should you use a pen and paper to help complete this task?
+                        <select id="penpaper" name="penpaper" class="form-control" >
+                            <option value="noresp" SELECTED></option>
+                            <option value="yes" >Yes</option>
+                            <option value="no" >No</option>
+                        </select>
+                    </p>
+                </div>
+            </form>
+        </p>
+
+    </div>
+    <!--END CONTENT-->
+    <!-- BUTTONS-->
+
+    <button type="button" id="continue" class="btn btn-success btn-lg continue"> Submit </button>
+</div>
+

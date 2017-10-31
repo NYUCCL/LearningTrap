@@ -1,0 +1,74 @@
+<div id="container-instructions">
+
+  <h1>Instructions</h1>
+
+  <hr />
+
+  <div class="instructions well">
+
+    <p>
+        In this experiment, you will play a simple game in which you are a
+        recruiter considering job applicants. <strong>Your goal is to create revenue
+        for your company.</strong>
+    </p>
+    <p>
+        You will see <strong>128 applicants</strong>, and must choose whether to
+        accept or reject each one. Some applicants are <strong>suitable</strong>
+        to work at your company, while some are <strong>unsuitable</strong>.
+    </p>
+
+    <p>
+        If you choose to accept an applicant, you'll learn whether they are
+        suitable or unsuitable. If they are suitable, your company's revenue
+        will <strong>increase by 1 thousand dollars</strong>. However, if they are
+        unsuitable, your company's revenue will <strong>decrease by 3
+        thousand dollars</strong>.
+    </p>
+
+    <p id="avoidresult">
+    </p>
+    <img id="outcomepicture" style="margin-left:auto; margin-right:auto; display:block" width="800" style="border: 0px;">
+
+    <script type="text/javascript">
+      if (condition!==1) {
+      document.getElementById('avoidresult').innerHTML = "\
+      If you choose to reject an applicant, <strong>you won't find out if they were \
+      suitable, and your company won't gain or lose money</strong>."
+      document.getElementById('outcomepicture').src = "/static/images/instr_outcomes_standard.png"
+      } else {
+      document.getElementById('avoidresult').innerHTML = "\
+      If you choose to reject an applicant, you'll still be able to see if they <strong>\
+      would have been suitable or not, but your company won't gain or lose any money</strong>."
+      document.getElementById('outcomepicture').src = "/static/images/instr_outcomes_fullinfo.png"
+      }
+    </script>
+    <p>
+      Your company begins with <strong>50 thousand dollars</strong> of revenue.
+      At the end of the experiment, you will receive a bonus of 1 cent for each
+      thousand dollars of revenue your company has.
+    </p>
+
+    
+    <script type="text/javascript">
+      //console.log(psiTurk.getInstructionIndicator())
+    </script>
+
+  </div>
+
+  <hr />
+<div class="instructionsnav">
+    <div class="row">
+      <div class="col-xs-2">
+        <!-- no previous button on first screen -->
+      </div>
+      <div class="col-xs-8">
+      </div>
+      <div class="col-xs-2">
+        <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+          Next <span class="glyphicon glyphicon-arrow-right"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>

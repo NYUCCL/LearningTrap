@@ -1,0 +1,107 @@
+<!--WRAPPER-->
+<div id="container-instructions">
+
+  <div class="header">
+    <!--TITLE--><h1>Comprehension Check</h1><!--END TITLE-->
+    <!--DESCRIPTION--><span></span><!-- END DESCRIPTION-->
+  </div>
+  <!--END HEADER-->
+
+  <div class="instructions well">
+    <p id="toptext">
+      Before beginning the experiment, you must answer a few simple questions to ensure you have read the instructions. If you do not answer all questions correctly, you will be returned to the start of the instructions and have a chance to retake this quiz.
+      <form id="prequiz" action="debrief" method="post">
+        <div class="question">            
+          <div>
+            <p>Which of the following are features of the bee varieties?</p>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="featurelist" value="legs">Two or six legs
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"  name="featurelist" value="square">Square or round body
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"  name="featurelist" value="eyes">Single or compound eyes
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"  name="featurelist" value="body">Stripes or spots on body
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"  name="featurelist" value="sting">Stinger or no stinger
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"  name="featurelist" value="wings">Single or double wings
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"  name="featurelist" value="tall">Tall or short body
+            </label>
+          </div>
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="featurelist" value="antennae">Antennae or no antennae
+            </label>
+          </div>
+        </div>
+
+
+        <div class="question">
+          <p class="questiontext">
+            Can a bee variety change from being friendly to dangerous or dangerous to friendly over time?
+            <select id="change" name="change" class="form-control">
+              <option value="noresp" SELECTED></option>
+	      <option value="yes">yes</option>
+	      <option value="no">no</option>
+            </select>
+          </p>
+        </div>
+        <div class="question">
+          <p class="questiontext">
+            How can you learn to tell whether a bee variety is dangerous?
+            <select id="telldangerous" name="telldangerous" class="form-control">
+              <option value="noresp" SELECTED></option>
+	      <option value="color">Based on the color of the bee</option>
+	      <option value="feature">Based on the four features of the bee</option>
+              <option value="smoke">Based on the order in which you see the bees</option>
+            </select>
+          </p>
+        </div>
+        
+
+        <div class="question">
+          <p class="questiontext">
+            What happens when you avoid a bee variety?
+            <select id="avoidinfo" name="avoidinfo" class="form-control">
+              <option value="noresp" SELECTED></option>
+	      <option value="noInfo">You do not learn if it was friendly or dangerous, and do not alter your bonus.</option>
+	      <option value="info">You learn if it was friendly or dangerous, but do not alter your bonus.</option>
+	      <option value="infoPlusBonus">You learn if it was friendly or dangerous and alter your bonus.</option>
+            </select>
+          </p>
+	</div>
+      </form>
+    </p>
+
+  </div>
+  <!--END CONTENT-->
+  <!-- BUTTONS-->
+
+  <button type="button" id="continue" class="btn btn-success btn-lg continue"> Submit </button>
+</div>
+

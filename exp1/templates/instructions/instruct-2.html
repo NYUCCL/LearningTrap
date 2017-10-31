@@ -1,0 +1,81 @@
+<div id="container-instructions">
+
+  <h1>Instructions</h1>
+
+  <hr />
+
+  <div class="instructions well">
+
+    <p>
+      You will collect honey from <strong id="numhives"></strong> beehives, which contain several
+      different bee varieties. At each hive you will see one of the
+      bees that live there and then need to choose whether to harvest
+      honey from the hive or to avoid it.
+    </p>
+
+    <p>
+      If you choose to harvest the hive, you'll be able to collect
+      honey if the bee variety is friendly, but will be stung if the
+      bee variety is dangerous. <strong>Collecting honey adds $0.02 to
+      your bonus</strong> for the experiment, while <strong>being
+      stung subtracts $0.10</strong> because you need expensive
+      medicine to treat the sting.
+    </p>
+
+    <p id="avoidresult">
+    </p>
+    <img id="outcomepicture" style="margin-left:auto; margin-right:auto; display:block" width="1000" style="border: 0px;">
+
+    <script type="text/javascript">
+      if (condition!==1) {
+      document.getElementById('avoidresult').innerHTML = "\
+      If you choose to avoid a hive, you won't gain or lose any money,\
+      and you won't discover whether the bees there were friendly or dangerous."
+      document.getElementById('outcomepicture').src = "/static/images/instr_outcomes_standard.png"
+      } else {
+      document.getElementById('avoidresult').innerHTML = "\
+      If you choose to avoid a hive, you won't gain or lose any\
+      money, but you'll still find out whether the bees were friendly\
+      or dangerous."
+      document.getElementById('outcomepicture').src = "/static/images/instr_outcomes_fullinfo.png"
+      }
+      if (condition!==4) {
+      document.getElementById('numhives').innerHTML = "64"
+      } else {
+      document.getElementById('numhives').innerHTML = "128"
+      }
+    </script>
+    
+    <p>
+      <strong>You begin with a bonus of $0.40</strong>. There will be
+      no changes in which bee varieties are friendly and which are
+      dangerous over the course of the experiment.
+    </p>
+
+    
+    <script type="text/javascript">
+      //console.log(psiTurk.getInstructionIndicator())
+    </script>
+
+  </div>
+
+  <hr />
+
+  <div class="instructionsnav">
+    <div class="row">
+      <div class="col-xs-2">
+        <button type="button" id="next" value="next" class="btn btn-primary btn-lg previous">
+          <span class="glyphicon glyphicon-arrow-left"></span> Previous
+        </button>
+      </div>
+      <div class="col-xs-8">
+      </div>
+      <div class="col-xs-2">
+        <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+          Next <span class="glyphicon glyphicon-arrow-right"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,140 @@
+<!--WRAPPER-->
+<div id="container-questionnaire">
+
+  <!--LOGIN FORM-->
+  <div name="login-form" class="login-form">
+    <!--HEADER-->
+    <div class="header">
+      <!--TITLE--><h1>Task Complete</h1><!--END TITLE-->
+      <!--DESCRIPTION--><span>You are almost done!</span><!-- END DESCRIPTION-->
+    </div>
+    <!--END HEADER-->
+
+    <!--CONTENT-->
+    <div class="instructions well">
+
+      <div class="col1">
+        <div class="questionnaire">
+          <p id = "toptext">Congratulations, you are finished!  You will be eligible for payment once you answer the following questions.</p>
+          <form id="postquiz" action="debrief" method="post">
+            <div class="question">
+              <p class="questiontext">
+                On a scale of 1-10 (where 10 is the most engaged), please rate how <b>ENGAGING</b> you found this task:
+              </p>
+              <select id="engagement" name="engagement">
+                <option value="noresp" SELECTED></option>
+                <option value="10">10 - Very engaging</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5 - Moderately</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0 - Not engaged</option>
+              </select>
+            </div>
+            <div class="question">
+              <p class="questiontext">
+                <br>
+                On a scale of 1-10 (where 10 is the most difficult), please rate how <b>DIFFICULT</b> you found this task:
+              </p>
+              <select id="difficulty" name="difficulty">
+                <option value="noresp" SELECTED></option>
+                <option value="10">10 - Very difficult</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5 - Moderately difficult</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0 - Easy</option>
+              </select>
+            </div>
+
+            <div class="question">
+              <p class="questiontext">
+                <br>
+                If you had any particular strategies for playing the game, please give a brief description in your own words.
+              </p>
+              <textarea id="strategy" cols=80 rows=3 />
+            </div>
+            <div class="question">
+              <p class="questiontext">
+                Did you find that anything changed about how you played the game over the course of the experiment?
+              </p>
+              <textarea id="changingstrategy" cols=80 rows=3 />
+            </div>
+            <div class="question">
+              <p class="questiontext">
+                Do you have any other thoughts or suggestions about the task?
+              </p>
+              <textarea id="howtoimprove" cols=80 rows=3 />
+            </div>
+
+            <div class="question">
+              <p class="questiontext">
+                What gender do you identify with?
+              </p>
+              <select id="gender" name="gender">
+                <option value="noresp" SELECTED></option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+                <option value="noresponse">I'd prefer not to respond</option>
+              </select>
+            </div>
+            <div class="question">
+              <p class="questiontext">
+                <br>
+                How old are you in years? Enter '-1' if you would prefer not to respond.
+              </p>
+              <input id="age" name="age" type="number" min="-1" style="height:45px; width:80px" />
+            </div>
+            <div class="question">
+              <p class="questiontext">
+                How would you describe your level of educational attainment?
+              </p>
+              <select id="education" name="education">
+                <option value="noresp" SELECTED></option>
+                <option value="somehs">Some high school (or less)</option>
+                <option value="highschool">High School diploma / GED / equivalent</option>
+                <option value="somecollege">Some college / 2-year degree</option>
+                <option value="bachelors">Bachelor's degree</option>
+                <option value="somegrad">Some graduate school</option>
+                <option value="masters">Master's degree</option>
+                <option value="doctor">Doctoral degree</option>
+                <option value="noresponse">I'd prefer not to respond</option>
+              </select>
+            </div>
+            <div class="question">
+              <p class="questiontext">
+                If you attended university, what subject area did you major in (if not, leave this blank)?
+              </p>
+              <select id="major" name="education">
+                <option value="noresp" SELECTED></option>
+                <option value="mathscience">Math/Natural Sciences</option>
+                <option value="socialscience">Social Sciences</option>
+                <option value="humanities">Arts/Humanities</option>
+                <option value="engineering">Engineering</option>
+                <option value="business">Business-Finance</option>
+                <option value="other">Other</option>
+                <option value="noresponse">I'd prefer not to respond</option>
+              </select>
+          </form>
+          </div>
+        </div>
+        <button type="button" id="continue" class="btn btn-warning btn-lg continue" name="continue">
+          Continue
+        </button>
+        <br>
+      </div>
+    </div>
+    <br/>
+  </div>
+</div>

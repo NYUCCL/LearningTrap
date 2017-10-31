@@ -1,0 +1,126 @@
+<div id="container-instructions">
+
+    <h1>Instructions</h1>
+
+    <hr />
+
+    <div class="instructions well">
+
+        <p>
+            Each application has four fields, which can have two different
+            values. You can use this information to determine whether an
+            applicant is suitable or not. The four fields and their values are:
+        </p>
+        <table>
+            <tr>
+                <th>Field</th>
+                <th>Value 1</th>
+                <th>Value 2</th>
+            </tr>
+            <tr>
+                <td class="c1">Degree:</td>
+                <td class="c2">Business</td>
+                <td class="c3">Economics</td>
+            </tr>
+            <tr>
+                <td class="c1">Past employer:</td>
+                <td class="c2">Hudson Inc.</td>
+                <td class="c3">Nile Co.</td>
+            </tr>
+            <tr>
+                <td class="c1">Past Position:</td>
+                <td class="c2">Developer</td>
+                <td class="c3">Analyst</td>
+            </tr>
+            <tr>
+                <td class="c1">Skill:</td>
+                <td class="c2">Design</td>
+                <td class="c3">Programming</td>
+            </tr>
+        </table>
+        <br/>
+        <p>
+        </p>
+        <p>
+            Each field has a "left" value and a "right" value, but this is only
+            for display purposes. The text is what matters!
+        </p>
+        <div id="extrainstructions" ></div>
+        <img id="examplepicture" style="margin-left:auto; margin-right:auto; display:block" width="400" style="border: 0px;" >
+        <script type="text/javascript" >
+         basicstring = "<p>The qualities that determine\
+            which applicants are suitable will not change over the course of the\
+            experiment, and some of the fields might not be relevant to\
+            determining whether an applicant is suitable or not.\
+            <strong>Remember: your goal is to finish with high revenue, not to\
+            make the correct choice on every single applicant</strong>. Below is\
+            an example application:</p>";
+         if (condition < 2) {
+             $('#extrainstructions').html(basicstring);
+             $('#examplepicture').attr("src", "/static/images/standardexample.png");
+         } else if (condition === 2) {
+             $('#extrainstructions').html("<p>The qualities that determine\
+            which applicants are suitable will not change over the course of the\
+            experiment, and some of the fields might not be relevant to\
+            determining whether an applicant is suitable or not.\
+            <strong>Remember: your goal is to finish with high revenue, not to\
+            make the correct choice on every single applicant</strong>. </p> <p> To help\
+            you make your decisions,\
+            the application system has a special feature which pairs each of the 16\
+            possible combinations of values with a randomly chosen animal icon.\
+            These icons may help you keep track of the combinations of values you've seen. However, the icons\
+            will not always be available, so it is still important to learn\
+            about the application fields.\
+            When an icon is not available, it will\
+            be replaced with \"N/A\". Below is an example\
+            application:</p>");
+             $('#examplepicture').attr("src", "/static/images/individuatedexample.png");
+
+         } else if (condition === 3) {
+             $('#extrainstructions').html("\
+             <p>On some applications, a field may be missing. When this happens, it will be\
+             replaced by a black rectangle. Missing fields will be revealed\
+             when you accept an applicant.</p>" + basicstring);
+             $('#examplepicture').attr("src", "/static/images/obscuredexample.png");
+         } else if (condition === 4) {
+             $('#extrainstructions').html("<p>Occasionally an applicant who\
+             appears suitable might be unsuitable, and vice versa. The qualities that determine\
+            which applicants are suitable will not change over the course of the\
+            experiment, and some of the fields might not be relevant to\
+            determining whether an applicant is suitable or not.\
+            <strong>Remember: your goal is to finish with high revenue, not to\
+            make the correct choice on every single applicant</strong>. Below is\
+            an example application:</p>");
+             $('#examplepicture').attr("src", "/static/images/standardexample.png");
+         }
+        </script>
+        <p> Each time you see a new application, the application fields will
+        initially be hidden. Press the <strong>SPACE</strong> bar to reveal each
+        field one at at time. Once all fields have been revealed, you will be
+            able to click "accept" or "reject". </p>
+        <div class="alert alert-danger" role="alert">
+            <p>Please do not use pen and paper or any other external device to help you in this experiment!</p>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg previous">
+                <span class="glyphicon glyphicon-arrow-left"></span> Previous
+                </button>
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-success btn-lg continue">
+                Begin experiment <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Consent Form</title>
+    <script src="static/jquery-min.js" type="text/lib/javascript"> </script>
+    <script src="static/cardtask.js" type="text/js/javascript"> </script>
+    <link rel=stylesheet href="static/css/bootstrap.min.css" type="text/css">
+    <link rel=stylesheet href="static/css/style.css" type="text/css" media="screen">
+    <script type="text/javascript">
+      function onexit() {
+      self.close()
+      }
+    </script>
+  </head>
+  <body>
+    <div id="container-consent">
+      <div class="legal well consent" id="consent">
+        <h1>We need your consent to proceed</h1>
+        <div class="legal">
+            <p>INSERT CONSENT FORM HERE</p>
+
+          <button type="button" class="btn btn-warning" onClick="window.print();">
+            <span class="glyphicon glyphicon-print"></span> Print a copy of this
+          </button>
+        </div>
+      </div>
+      <br/>
+
+      <div class="warm">
+        <center>
+          <p>Do you understand and consent to the terms of the experiment explained above?</p>
+          <br/>
+          <button type="button" class="btn btn-primary btn-lg" onClick="window.location='/exp?hitId={{ hitid }}&assignmentId={{ assignmentid }}&workerId={{ workerid }}'">
+            <span class="glyphicon glyphicon-ok"></span> I agree
+          </button>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn btn-danger btn-lg" onClick="onexit()">
+            <span class="glyphicon glyphicon-ban-circle"></span> No thanks, I do not want to do this HIT
+          </button>
+        </center>
+      </div>
+    </div>
+  </body>
+</html>

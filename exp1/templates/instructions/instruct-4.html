@@ -1,0 +1,58 @@
+<div id="container-instructions">
+
+    <h1>Instructions</h1>
+
+    <hr />
+
+    <div class="instructions well">
+
+
+        <div id="additionalinfo1">
+        </div>
+        <img id="additionalpic" src="" style="margin-left:auto; margin-right:auto; display:block" width="400" style="border: 0px;">
+
+
+        
+        <script type="text/javascript">
+          if (condition===2) {
+              document.getElementById('additionalinfo1').innerHTML = "\
+            <p>Each variety of bee also has its own unique color. \
+              These colors make the varieties more easily identifiable, but\
+              are not connected to whether the variety is dangerous. Only the four features\
+              can be used to predict if a bee variety is dangerous.<\p>"
+            document.getElementById('additionalpic').src = "static/images/instr_color.png";
+          } else if (condition===3) {
+              document.getElementById('additionalinfo1').innerHTML = "\
+            <p>Sometimes, your bee smoker (used to calm down bees while \
+            collecting honey) will malfunction, causing a cloud of \
+            smoke to block out one of the features. When this \
+            occurs, you'll have to try to use the other three \
+            features to decide whether to collect honey from the \
+              hive.</p>"
+            document.getElementById('additionalpic').src = "static/images/instr_obscure.png";
+          } 
+        </script>
+
+
+    </div>
+
+    <hr />
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg previous">
+                <span class="glyphicon glyphicon-arrow-left"></span> Previous
+                </button>
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-success btn-lg continue">
+                Begin experiment <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

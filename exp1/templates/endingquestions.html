@@ -1,0 +1,69 @@
+<div id="container-questionnaire">
+  <h1>Finished harvesting honey!</h1>
+
+  <hr />
+
+  <p id="performancereport"></p>
+  <p>We have a couple of short questions before you complete the experiment:</p>
+  <div class="instructions well">
+
+    <form id="taskquiz" action="postquestionnaire" method="post">
+      <div class="question">
+        <p>About what percentage of beehives do you think contained dangerous bees? (enter a value between 0 and 100.)</p>
+        <input type="number" id="dangerpercent" name="dangerpercent">
+      </div>
+      <div class="question">            
+        <div>
+          <p>Which features do you think were useful for deciding whether a bee variety was friendly or dangerous?</p>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="dimensions" value="legs">Two or six legs
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"  name="dimensions" value="body">Stripes or spots on body
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"  name="dimensions" value="wings">Single or double wings
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="dimensions" value="antennae">Antennae or no antennae
+          </label>
+        </div>
+      </div>
+      <div class="question">
+        <div class="question">
+          Did you use pen and paper or another external aid during the
+          task? (Please be honest, your payment will not be affected!)
+        </div>
+        <select id="penpaper" name="penpaper" class="form-control">
+          <option value="noresp" SELECTED></option>
+          <option value="no">no</option>
+          <option value="yes">yes</option>
+        </select>
+      </div>
+    </form>
+  </div>
+
+  <hr />
+
+  <div class="instructionsnav">
+    <div class="row">
+      <div class="col-xs-2">
+      </div>
+      <div class="col-xs-7">
+      </div>
+      <div class="col-xs-3">
+        <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+          Continue <span class="glyphicon glyphicon-arrow-right"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

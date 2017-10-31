@@ -1,0 +1,302 @@
+
+body {
+    padding:0px;
+    margin: 0px;
+    background-color: white;
+    color: black;
+    font-weight: 300;
+    font-size: 13pt;
+}
+
+
+/* text styling */
+strong {
+  font-weight: 600;
+}
+
+.warm {
+  color: steelblue;
+  text-align: justify;
+}
+
+.cool {
+  color: #ccccff;
+}
+
+
+/* these are all the same for now, but easy to modify individually */
+#container-ad, #container-error, #container-exp, #container-consent, #container-instructions, #container-questionnaire {
+    /* position: absolute; */
+    margin: 0 auto;
+    width: 1300px;
+    top: 0px; /* Header Height */
+    bottom: 0px; /* Footer Height */
+    left: 0px;
+    right: 0px;
+    padding: 100px;
+    padding-top: 5%;
+    /* border: 18px solid #f3f3f3; */
+    background: white;
+}
+
+.instructionsnav {
+    padding-bottom: 20px;
+}
+
+#container-consent, #container-exp {  /* override padding to fit long consent forms and exp display*/
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1%;
+}
+
+/* ad.html  - the ad that people view first */
+#adlogo {
+    float: right;
+    width: 140px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+/* consent.html - the consent form */
+#consent {
+  margin: 0 auto;
+  margin-top: 0;
+  width: 800px;
+  font-size: 100%;
+}
+
+
+.legal {
+  text-align: justify;
+  font-size: 11pt;
+  line-height: 1.1em;
+}
+
+#trial {
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+}
+
+#query {
+  color: darkgray;
+}
+
+.question {
+  margin-bottom: 30px;
+}
+
+/* errors */
+#error img {
+  padding-right: 10px;
+  padding-top: 15px;
+}
+
+.choice {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 120px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+tr, td, th{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+th {
+    color: darkblue;
+}
+
+.c2 {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+.c3 {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-control {
+    font-size: 18px;
+}
+
+/* css for task*/
+
+#pageheader {
+    text-align: center;
+    font-size: 20px;
+}
+
+#stage {
+    width: 800px;
+    height: 450px;
+    margin: auto;
+}
+
+#hud {
+    margin-left: 60%;
+    font-size: 20px;
+}
+
+#trialsnumber {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#bonusnumber {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+#feedback {
+    margin-top: 10px;
+}
+
+/* #feedback p { */
+/*     display: inline; */
+/* } */
+
+#feedbackval {
+    /* float: left; */
+    font-weight: bold;
+    font-size: 60px;
+    font-family: monospace;
+}
+
+#feedbackmessage {
+    font-size: 30px;
+    font-family: monospace;
+}
+
+/* #acceptreject { */
+/*     margin-left: 30%; */
+/*     border: 5px solid black; */
+/*     font-family: monospace; */
+/*     font-weight: bold; */
+/*     border-radius: 10px; */
+/*     padding-left: 5px; */
+/*     font-size: 32px; */
+/*     height: 70px; */
+/*     padding-top: 10px; */
+/* } */
+
+/* #stimtype { */
+/*     font-size: 36px; */
+/*     font-family: monospace; */
+/*     float: left; */
+/* } */
+
+#application {
+    /* margin-left:0%; */
+    width: 530px;
+    height: 450px;
+    float: left;
+    border: 5px solid black;
+    padding: 20px;
+}
+
+#response-buttons {
+    text-align: center;
+    clear: both;
+}
+
+#info {
+    text-align: center; 
+}
+
+.obscured {
+    background: black;
+}
+
+/* resume styles */
+
+.dimlab {
+    width: 180px;
+    float: left;
+}
+
+.dimval {
+    width: 300px;
+    float: left;
+}
+
+.sep {
+    width: 20px;
+    float: left;
+    text-align: center;
+}
+
+.v0 {
+    width: 140px;
+    float: left;
+    text-align: right;
+}
+
+.v1 {
+    width: 140px;
+    float: left;
+}
+
+
+/* default style */
+
+/* styling for entire div of application */
+.defaultstyle#application {
+    background: white;
+    border: none;
+}
+
+/* styling for all text */
+.defaultstyle p {
+    font-family: monospace;
+}
+
+/* styling for title text */
+.defaultstyle #title {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.dim {
+    /* margin-bottom: 30px; */
+    height: 50px;
+}
+
+/* styling for field label text */
+.defaultstyle .dimlab {
+    /* display: inline; */
+    float: left;
+    font-size: 18px;
+}
+
+/* set display:none to remove colons after field names */
+.defaultstyle .separator {
+    /* display: none; */
+}
+
+/* styling for field value text */
+.defaultstyle .dimval {
+    /* display: inline; */
+    font-size: 20px;
+    font-weight: bold;
+    /* margin-left: 40%; */
+}
+
+#indivval {
+    padding-top: 20px;
+    padding-left: 200px;
+}
+
+#indivlabel {
+    float: left;
+    padding-right: 20px;
+}
